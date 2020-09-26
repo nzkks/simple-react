@@ -8,8 +8,11 @@
 <body>
   <div id="root"></div>
   <script type="module">
-    var rootElement = document.getElementById('root');
-    rootElement.append('Content');
+    const rootElement = document.getElementById('root');
+    const element = document.createElement('div');
+    element.textContent = "Content";
+    element.className = "container";
+    rootElement.append(element);
   </script>
 </body>
 </html>

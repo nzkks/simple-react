@@ -6,6 +6,10 @@
   <title>One file React application for testing simple concepts</title>
 </head>
 <body>
-  Content
+  <div id="root"></div>
+  <script type="module">
+    var rootElement = document.getElementById('root');
+    rootElement.append('Content');
+  </script>
 </body>
 </html>
